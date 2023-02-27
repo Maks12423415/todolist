@@ -1,0 +1,42 @@
+body {
+  display: grid;
+  margin: 0px;
+  background-color: aquamarine;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100vh;
+  grid-template-areas: "interfejs app";
+}
+
+#app {
+  grid-area: app;
+  background-color: gold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+#interfejs {
+  grid-area: interfejs;
+  background-color: darkkhaki;
+  border-right: 5px solid black;
+}
+
+.done {
+  background-color: green;
+}
+
+.notdone {
+  background-color: red;
+}
+
+.tododiv {
+  width: 300px;
+  height: 200px;
+  border: 4px solid black;
+  text-align: center;
+  border-radius: 15px;
+}
